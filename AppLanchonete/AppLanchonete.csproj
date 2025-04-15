@@ -59,6 +59,7 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\edit.png" />
 	  <None Remove="Resources\Images\faq.png" />
+	  <None Remove="Resources\Images\fast-food.png" />
 	  <None Remove="Resources\Images\foodicon.png" />
 	  <None Remove="Resources\Images\heart.png" />
 	  <None Remove="Resources\Images\heartfill.png" />
@@ -83,11 +84,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Pages\" />
+	  <MauiSplashScreen Include="Resources\Splash\lanche1.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiSplashScreen Include="Resources\Splash\lanche1.svg" />
+	  <MauiXaml Update="Pages\InscricaoPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\Login.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

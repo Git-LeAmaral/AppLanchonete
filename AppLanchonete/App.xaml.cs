@@ -1,4 +1,6 @@
-﻿namespace AppLanchonete
+﻿using AppLanchonete.Pages;
+
+namespace AppLanchonete
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            MainPage = new NavigationPage(new InscricaoPage());
         }
     }
 }

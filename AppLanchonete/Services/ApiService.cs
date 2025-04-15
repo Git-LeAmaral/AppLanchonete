@@ -62,6 +62,7 @@ public class ApiService
                 ErrorMessage = ex.Message
             };
         }
+        return null;
     }
     
     public async Task<ApiResponse<bool>> Login(string nome, string email, string password)
