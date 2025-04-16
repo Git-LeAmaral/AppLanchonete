@@ -12,7 +12,7 @@ public partial class InscricaoPage : ContentPage
         _apiService = apiService;
     }
 
-    private async void BtnSignup_ClickedAsync(object sender, EventArgs e)
+    private async void BtnSignup_Clicked(object sender, EventArgs e)
     {
         var response = await _apiService.RegistrarUsuario(EntNome.Text, EntEmail.Text, EntPhone.Text, EntPassword.Text);
 
@@ -27,7 +27,7 @@ public partial class InscricaoPage : ContentPage
         }
     }
 
-    private async void TapLogin_TappedAsync(object sender, TappedEventArgs e)
+    private async void TapLogin_Tapped(object sender, TappedEventArgs e)
     {
         await Navigation.PushAsync(new LoginPage(_apiService));
     }

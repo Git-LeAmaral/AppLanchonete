@@ -1,14 +1,18 @@
 ﻿using AppLanchonete.Pages;
+using AppLanchonete.Services;
 
-namespace AppLanchonete
+namespace AppLanchonete;
+
+public partial class App : Application
 {
-    public partial class App : Application
-    {
-        public App()
+    private readonly ApiService _apiService;
+    
+        public App(ApiService apiService)
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new InscricaoPage());
+            _apiService = apiService;
+            MainPage = new NavigationPage(new InscricaoPage(_apiService));
         }
-    }
+
+    
 }

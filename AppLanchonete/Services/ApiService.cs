@@ -65,7 +65,7 @@ public class ApiService
         return null;
     }
     
-    public async Task<ApiResponse<bool>> Login(string nome, string email, string password)
+    public async Task<ApiResponse<bool>> Login(string email, string password)
     {
         try
         {

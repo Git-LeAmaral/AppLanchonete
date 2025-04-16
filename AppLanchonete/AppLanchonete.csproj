@@ -59,7 +59,7 @@
 	<ItemGroup>
 	  <None Remove="Resources\Images\edit.png" />
 	  <None Remove="Resources\Images\faq.png" />
-	  <None Remove="Resources\Images\fast-food.png" />
+	  <None Remove="Resources\Images\fastfood.png" />
 	  <None Remove="Resources\Images\foodicon.png" />
 	  <None Remove="Resources\Images\heart.png" />
 	  <None Remove="Resources\Images\heartfill.png" />
