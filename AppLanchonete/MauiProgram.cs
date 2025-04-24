@@ -1,4 +1,5 @@
 ﻿using AppLanchonete.Services;
+using AppLanchonete.Validations;
 using Microsoft.Extensions.Logging;
 
 namespace AppLanchonete
@@ -21,6 +22,7 @@ namespace AppLanchonete
 #endif
             builder.Services.AddHttpClient();
             builder.Services.AddSingleton<ApiService>();
+            builder.Services.AddSingleton<IValidator, Validator>();
 
             return builder.Build();
         }
